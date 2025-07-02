@@ -22,9 +22,9 @@ ID: {}"""
 ║┣⪼📚ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a> 
 ║┣⪼🗒️ᴠᴇʀsɪᴏɴ : ᴜʜᴅ ᴍᴜʟᴛɪ ᴛᴀsᴋɪɴɢ v7.4
 ║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍ </b>"""
+╚══════════════════❍ </b>
 
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/ANKAN_Contact_BOT'>ᴀɴᴋᴀɴ</a></blockquote></b>"""
+<blockquote>ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/ANKAN_Contact_BOT'>ᴀɴᴋᴀɴ</a></blockquote></b>"""
   
   HELP = """<b>{},
 
