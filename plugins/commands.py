@@ -24,7 +24,7 @@ async def start_cmd(client, message):
             [InlineKeyboardButton("🤗 ʜᴇʟᴘ 🤗", callback_data="help"),
              InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ 🤖", callback_data="about")],
             [InlineKeyboardButton("🗿 ᴜʜᴅ ɴᴇᴛᴡᴏʀᴋ 🗿", url="http://t.me/UHD_NETWORK")]
-        ])
+        ]),
         disable_web_page_preview=True
 
 @Client.on_message(filters.command("stats") & filters.private & filters.user(ADMIN))
