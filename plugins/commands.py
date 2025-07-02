@@ -19,13 +19,13 @@ async def start_cmd(client, message):
     if IS_FSUB and not await get_fsub(client, message):return
     await message.reply_text(
         text.START.format(message.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')],
-            [InlineKeyboardButton('ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ', callback_data='generate')]
-        ]),
+        reply_markup = InlineKeyboardMarkup([
+            [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url="http://t.me/UHD_Bots")],
+            [InlineKeyboardButton("🤗 ʜᴇʟᴘ 🤗", callback_data="help"),
+             InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ 🤖", callback_data="about")],
+            [InlineKeyboardButton("🗿 ᴜʜᴅ ɴᴇᴛᴡᴏʀᴋ 🗿", url="http://t.me/UHD_NETWORK")]
+        ])
         disable_web_page_preview=True
-    )
 
 @Client.on_message(filters.command("stats") & filters.private & filters.user(ADMIN))
 async def total_users(client, message):
