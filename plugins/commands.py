@@ -33,11 +33,10 @@ async def start_cmd(client, message):
     if IS_FSUB and not await get_fsub(client, message):return
     await message.reply_text(
         text.START.format(message.from_user.mention),
-        reply_markup = InlineKeyboardMarkup([
-            [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url="http://t.me/UHD_Bots")],
-            [InlineKeyboardButton("🤗 ʜᴇʟᴘ 🤗", callback_data="help"),
-             InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ 🤖", callback_data="about")],
-            [InlineKeyboardButton('ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ', callback_data='generate')]
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ 🤖', callback_data='about'),
+             InlineKeyboardButton('🤗 ʜᴇʟᴘ 🤗', callback_data='help')],
+            [InlineKeyboardButton('⚡ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ⚡', callback_data='generate')]
         ]),
         disable_web_page_preview=True
     )
@@ -103,4 +102,4 @@ async def broadcasting_func(client: Client, message: Message):
     await msg.edit(
         f"😶‍🌫 <b>Broadcast Completed</b>\n\n👥 Total Users: <code>{len(users_list)}</code>\n✅ Successful: <code>{completed}</code>\n🤯 Failed: <code>{failed}</code>",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]])
-            )
+    )
