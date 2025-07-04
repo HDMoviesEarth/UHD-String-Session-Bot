@@ -1,5 +1,6 @@
 import re
 from pyrogram import Client, filters
+from pyrogram.errors import MessageNotModified
 from pyrogram.errors import *
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from config import *
@@ -96,10 +97,17 @@ async def broadcasting_func(client: Client, message: Message):
             print(f"Broadcast to {user_id} failed: {e}")
             failed += 1
 
-        await msg.edit(f"Total: {i + 1}\nCompleted: {completed}\nFailed: {failed}")
+        try:
+    await msg.edit(f"Total: {i + 1}\nCompleted: {completed}\nFailed: {failed}")
+except MessageNotModified:
+    pass  # Ignore if content is same
         await asyncio.sleep(0.1)
 
+    try:
     await msg.edit(
         f"😶‍🌫 <b>Broadcast Completed</b>\n\n👥 Total Users: <code>{len(users_list)}</code>\n✅ Successful: <code>{completed}</code>\n🤯 Failed: <code>{failed}</code>",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]])
     )
+except MessageNotModified:
+    pass
+    
