@@ -20,9 +20,9 @@ async def callback_query_handler(client, query: CallbackQuery):
                 ])
             )
 
-        elif data == "help":
+        elif data == "donate":
             await query.message.edit_text(
-                text.HELP.format(query.from_user.mention),
+                text.DONATE.format(query.from_user.mention),
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://telegram.me/UHD_Bots'),
