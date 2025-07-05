@@ -41,8 +41,8 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url="http://t.me/UHD_Bots")],
             [
-                InlineKeyboardButton("🤗 ʜᴇʟᴘ 🤗", callback_data="help"),
-                InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ 🤖", callback_data="about")
+                InlineKeyboardButton("🤗 ᴅᴏɴᴀᴛᴇ 🤗", callback_data="generate"),
+                InlineKeyboardButton("🌐 ᴜʜᴅ ᴏғғɪᴄɪᴀʟ 🌐", url="http://t.me/UHD_Official")
             ],
             [InlineKeyboardButton("⚡ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ⚡", callback_data="generate")]
         ]),
