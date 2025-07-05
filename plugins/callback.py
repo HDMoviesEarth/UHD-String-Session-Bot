@@ -15,7 +15,7 @@ async def callback_query_handler(client, query: CallbackQuery):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')],
+                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='donate')],
                     [InlineKeyboardButton('ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ', callback_data='generate')]
                 ])
             )
