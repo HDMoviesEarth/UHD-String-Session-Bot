@@ -15,7 +15,7 @@ async def callback_query_handler(client, query: CallbackQuery):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url="http://t.me/UHD_Bots")],
-                    [InlineKeyboardButton("🤗 ᴅᴏɴᴀᴛᴇ 🤗", callback_data="donate"),
+                    [InlineKeyboardButton("🤗 sᴜᴘᴘᴏʀᴛ 🤗", url="http://t.me/UHDBots_Support"),
                      InlineKeyboardButton("🌐 ᴜʜᴅ ᴏғғɪᴄɪᴀʟ 🌐", url="http://t.me/UHD_Official")
                     [InlineKeyboardButton("⚡ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ⚡", callback_data="generate")]
                 ])
