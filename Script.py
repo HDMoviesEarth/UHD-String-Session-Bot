@@ -12,24 +12,8 @@ class text(object):
 User: {}
 ID: {}"""
   
-  ABOUT = """
-<b>╔════❰ ᴜʜᴅ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ ❱═❍
-║╭━━━━━━━━━━━━━━━➣
-║┣⪼🤖ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/UHD_StringSessionBot'>ᴜʜᴅ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ</a>
-║┣⪼🧑‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/ANKAN_Contact_BOT'>ᴀɴᴋᴀɴ</a>
-║┣⪼❤️ᴜᴘᴅᴀᴛᴇ : <a href=https://t.me/UHD_Bots>ᴜʜᴅ ʙᴏᴛs™</a>
-║┣⪼🗣️ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.java.com>ᴊᴀᴠᴀ</a>
-║┣⪼📚ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a> 
-║┣⪼🗒️ᴠᴇʀsɪᴏɴ : ᴜʜᴅ ᴍᴜʟᴛɪ ᴛᴀsᴋɪɴɢ v7.4
-║╰━━━━━━━━━━━━━━━➣
-╚══════════════════❍ </b>
+  DONATE_TXT = """
+<blockquote>❤️‍🔥 ᴛʜᴀɴᴋs ғᴏʀ sʜᴏᴡɪɴɢ ɪɴᴛᴇʀᴇsᴛ ɪɴ ᴅᴏɴᴀᴛɪᴏɴ</blockquote>
 
-<blockquote>ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/ANKAN_Contact_BOT'>ᴀɴᴋᴀɴ</a></blockquote></b>"""
-  
-  HELP = """<b>{},
-
-ᴛʜɪꜱ ɪꜱ ʀᴇᴀʟʟʏ sɪᴍᴘʟᴇ 🤣
-
-ᴊᴜsᴛ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴄʟɪᴄᴋ ᴏɴ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ᴛʜᴇɴ ꜰᴏʟʟᴏᴡ ᴛʜᴇ sᴛᴇᴘs
-
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/ANKAN_Contact_BOT'>ᴀɴᴋᴀɴ</a></blockquote></b>"""
+💗 𝗨𝗣𝗜 𝗜𝗗 & 𝗤𝗥 𝗖𝗢𝗗𝗘 : <b><a href='https://graph.org/Donate-06-01'>𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾</a></b>
+"""
