@@ -11,5 +11,5 @@ LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002645203047"))
 DB_URI = os.environ.get("DB_URI", "")
 DB_NAME = os.environ.get("DB_NAME", "HDMoviesEarth")
 
-IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
-AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "-1001943817170").split())) # Add Multiple channel ids
+IS_FSUB = os.environ.get("IS_FSUB", "True").lower() == "true"  # Set "True" For Enable Force Subscribe
+AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "-1002521290472").split())) # Add Multiple channel ids
