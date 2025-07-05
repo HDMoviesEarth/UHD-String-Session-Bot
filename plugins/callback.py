@@ -13,7 +13,7 @@ async def callback_query_handler(client, query: CallbackQuery):
             await query.message.edit_text(
                 text.START.format(query.from_user.mention),
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([
+                reply_markup=InlineKeyboardMarkup(
                     [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡", url="http://t.me/UHD_Bots")],
                     [InlineKeyboardButton("🤗 ᴅᴏɴᴀᴛᴇ 🤗", callback_data="donate"),
                      InlineKeyboardButton("🌐 ᴜʜᴅ ᴏғғɪᴄɪᴀʟ 🌐", url="http://t.me/UHD_Official")
